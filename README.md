@@ -9,11 +9,11 @@
 
 Tool for sanitising data files of sensitive information through substitution with fake information.
 
--   [Getting Started](#getting-started)
--   [Verification](#verification)
--   [Design](#design)
--   [References](#references)
--   [License](#license)
+- [Getting Started](#getting-started)
+- [Verification](#verification)
+- [Design](#design)
+- [References](#references)
+- [License](#license)
 
 ## Getting Started
 
@@ -51,8 +51,8 @@ See [Commands](#commands) section for more information.
 
 ### Linting
 
--   [Prettier](https://prettier.io)
--   [gofmt](https://pkg.go.dev/cmd/gofmt)
+- [Prettier](https://prettier.io)
+- [gofmt](https://pkg.go.dev/cmd/gofmt)
 
 ```shell
 make lint
@@ -72,6 +72,20 @@ make test
 
 ## Design
 
+### Usage Scenarios
+
+#### MySQL Dump for Non-production Seeding of WordPress
+
+> ⚠️ Not Yet Implemented
+
+You have a mysql dump `sensitive.sql`, that contains sensitive data you wish to substitute with fake data before loading
+into a non-production environment. The resulting `clean.sql` can then be loaded into a non-production environment.
+The `wordpres` preset has an additional option to replace environment urls.
+
+```shell
+./deterge sql sensitive.sql clean.sql
+```
+
 ### Repository Structure
 
 _Placeholder_
@@ -84,7 +98,10 @@ _Placeholder_
 
 #### Internationalization
 
-> 💡️ Perhaps using a package like [nicksnyder/go-i18n](https://github.com/nicksnyder/go-i18n). The currently selected language could be discovered from the environment, e.g. `LANG=en_AU.UTF-8` for command line and [Accept-Language](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language) header, e.g. `Accept-Language: en-AU,en;q=0.9` for the web ui.
+> 💡️ Perhaps using a package like [nicksnyder/go-i18n](https://github.com/nicksnyder/go-i18n). The currently selected
+> language could be discovered from the environment, e.g. `LANG=en_AU.UTF-8` for command line
+> and [Accept-Language](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Accept-Language) header,
+> e.g. `Accept-Language: en-AU,en;q=0.9` for the web ui.
 
 ### Security Mitigations
 
@@ -133,7 +150,8 @@ _Placeholder_
 
 ## References
 
-_Placeholder_
+- [Cobra](https://cobra.dev) - A Commander for modern Go CLI interactions
+- [Viper](https://github.com/spf13/viper) - Go configuration with fangs
 
 ## License
 
