@@ -6,6 +6,7 @@
 [![ci workflow status](https://img.shields.io/github/workflow/status/dbtedman/kata-deterge/ci?style=for-the-badge&logo=github&label=ci)](https://github.com/dbtedman/kata-deterge/actions/workflows/ci.yml)
 [![sast workflow status](https://img.shields.io/github/workflow/status/dbtedman/kata-deterge/sast?style=for-the-badge&logo=github&label=sast)](https://github.com/dbtedman/kata-deterge/actions/workflows/sast.yml)
 ![language: go](https://img.shields.io/badge/language-go-blue.svg?style=for-the-badge)
+[![MIT License](https://img.shields.io/github/license/dbtedman/kata-deterge?color=orange&style=for-the-badge)](https://github.com/dbtedman/kata-deterge/blob/main/LICENSE.md)
 
 Tool for sanitising data files of sensitive information through substitution with fake information.
 
