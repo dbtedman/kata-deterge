@@ -9,11 +9,11 @@
 
 Tool for sanitising data files of sensitive information through substitution with fake information.
 
-- [Getting Started](#getting-started)
-- [Verification](#verification)
-- [Design](#design)
-- [References](#references)
-- [License](#license)
+-   [Getting Started](#getting-started)
+-   [Verification](#verification)
+-   [Design](#design)
+-   [References](#references)
+-   [License](#license)
 
 ## Getting Started
 
@@ -51,8 +51,8 @@ See [Commands](#commands) section for more information.
 
 ### Linting
 
-- [Prettier](https://prettier.io)
-- [gofmt](https://pkg.go.dev/cmd/gofmt)
+-   [Prettier](https://prettier.io)
+-   [gofmt](https://pkg.go.dev/cmd/gofmt)
 
 ```shell
 make lint
@@ -150,8 +150,8 @@ _Placeholder_
 
 ## References
 
-- [Cobra](https://cobra.dev) - A Commander for modern Go CLI interactions
-- [Viper](https://github.com/spf13/viper) - Go configuration with fangs
+-   [Cobra](https://cobra.dev) - A Commander for modern Go CLI interactions
+-   [Viper](https://github.com/spf13/viper) - Go configuration with fangs
 
 ## License
 
